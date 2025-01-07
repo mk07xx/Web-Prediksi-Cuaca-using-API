@@ -1,0 +1,74 @@
+.kotamu {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.search-container {
+  margin: 20px 0;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+.forecast-horizontal {
+  display: flex;
+  justify-content: space-around; /* Mengatur elemen menjadi rata kiri-kanan */
+  flex-wrap: wrap; /* Membungkus elemen jika layar sempit */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.forecast-item-horizontal {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  flex: 0 0 200px; /* Lebar tetap untuk setiap item */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.forecast-item-horizontal:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.error {
+  color: red;
+}
+
+.search-result {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.search-result:after {
+  content: "Berikut prakiraan cuaca untuk kota Tokyo";
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #666;
+  text-align: center;
+}

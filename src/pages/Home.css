@@ -1,0 +1,101 @@
+/* Default Background */
+.default-bg {
+  background: url("/src/assets/clear.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Cerah (Clear Sky) */
+.clear-bg {
+  background: url("/src/assets/clear.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Berawan */
+.cloudy-bg {
+  background: url("/src/assets/cloudy.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Hujan */
+.rainy-bg {
+  background: url("/src/assets/rainy.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Salju */
+.snow-bg {
+  background: url("/src/assets/snow.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Gaya untuk Section Titles */
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Judul di tengah secara horizontal */
+  margin-bottom: 20px;
+}
+
+.section-title-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: inline-block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.section-title-box h2 {
+  color: black; /* Warna teks hitam */
+  display: flex; /* Mengatur posisi ikon dan teks */
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Jarak antara ikon dan teks */
+}
+
+.section-title-box h2 .fa-icon {
+  color: black; /* Warna ikon hitam */
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto;
+}
+
+/* Current Weather Section */
+.current-weather {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+/* Forecast Section */
+.forecast-horizontal {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.forecast-item-horizontal {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 0 0 auto;
+  width: 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.forecast-item-horizontal:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

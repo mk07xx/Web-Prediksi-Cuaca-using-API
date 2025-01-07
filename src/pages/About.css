@@ -1,0 +1,32 @@
+.about {
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 30px;
+  text-align: center;
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+}
+
+.about h2 {
+  color: #1e90ff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.about-footer {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+}
