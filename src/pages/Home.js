@@ -75,11 +75,11 @@ const Home = () => {
           <div className="title-underline"></div>
         </div>
 
-        {error && <p className="error">{error}</p>}
+        {error && <p className="error" style={{ color: "black" }}>{error}</p>}
 
         {/* Data Cuaca Sekarang */}
         {currentWeather && (
-          <div className="current-weather">
+          <div className="current-weather" style={{ color: "black" }}>
             <p>
               <FontAwesomeIcon icon={faTemperatureHalf} /> <strong>Temperature:</strong>{" "}
               {currentWeather.main.temp}°C
@@ -110,9 +110,9 @@ const Home = () => {
         </div>
 
         {/* Prakiraan Cuaca 4 Hari */}
-        <div className="forecast-horizontal">
+        <div className="forecast-horizontal" style={{ color: "black" }}>
           {forecast.map((day, index) => (
-            <div key={index} className="forecast-item-horizontal">
+            <div key={index} className="forecast-item-horizontal" style={{ color: "black" }}>
               <p>
                 <strong>Date:</strong> {new Date(day.dt_txt).toLocaleDateString()}
               </p>

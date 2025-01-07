@@ -64,7 +64,6 @@
 }
 
 .search-result:after {
-  content: "Berikut prakiraan cuaca untuk kota Tokyo";
   display: block;
   margin-top: 10px;
   font-size: 1.1em;

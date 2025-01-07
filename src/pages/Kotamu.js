@@ -6,15 +6,18 @@ const Kotamu = () => {
   const [city, setCity] = useState("");
   const [forecast, setForecast] = useState([]);
   const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
 
   const API_KEY = "5e7854915c20cc5a3b83a4b12e97c24f";
 
   const handleSearch = async () => {
     if (!city) {
       setError("Please enter a city name.");
+      setMessage("");
       return;
     }
     setError("");
+    setMessage("");
     try {
       const response = await axios.get(
         `https://api.openweathermap.org/data/2.5/forecast`,
@@ -26,19 +29,20 @@ const Kotamu = () => {
           },
         }
       );
-  
+
       // Filter forecast data to get data for the next 5 days at the same time
       const filteredData = response.data.list.filter((item) =>
         item.dt_txt.includes("12:00:00")
       ).slice(0, 5); // Get 5 days
-  
+
       setForecast(filteredData);
+      setMessage(`Berikut ini adalah prediksi cuaca selama 5 hari untuk kota ${city}`);
     } catch (err) {
       setError("Failed to fetch forecast. Please check the city name.");
       setForecast([]);
+      setMessage("");
     }
   };
-  
 
   return (
     <div className="kotamu">
@@ -53,6 +57,7 @@ const Kotamu = () => {
         <button onClick={handleSearch}>Search</button>
       </div>
       {error && <p className="error">{error}</p>}
+      {message && <p className="search-result">{message}</p>}
       {forecast.length > 0 && (
         <div className="forecast-horizontal">
           {forecast.map((day, index) => (

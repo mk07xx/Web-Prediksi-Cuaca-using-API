@@ -18,7 +18,7 @@
 
 /* Hujan */
 .rainy-bg {
-  background: url("/src/assets/rainy.jpeg") no-repeat center center fixed;
+  background: url("/src/assets/rainy.jpeg") repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
