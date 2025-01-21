@@ -12,10 +12,10 @@ const Contact = () => {
         <div className="contact-info">
           <h3>Informasi Kontak</h3>
           <div className="contact-buttons">
-            <a href="https://wa.me/62895397889665" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6289999999999" target="_blank" rel="noopener noreferrer">
               <button>WhatsApp</button>
             </a>
-            <a href="mailto:mikaelteubun@gmail.com">
+            <a href="mailto:mikaelexample@gmail.com">
               <button>Email</button>
             </a>
             <a href="https://www.google.com/maps/search/?api=1&query=RE.+Martadinata,+Tanjung+Priok,+Jakarta+Utara" target="_blank" rel="noopener noreferrer">

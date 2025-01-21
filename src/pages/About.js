@@ -12,9 +12,6 @@ const About = () => {
         <p>
           Dengan antarmuka yang sederhana dan responsif, WeatherApp membantu Anda mengetahui suhu, kondisi cuaca, kelembapan, serta kecepatan angin di berbagai kota dengan cepat dan akurat.
         </p>
-        {/* <p>
-          Dibangun menggunakan teknologi modern seperti <strong>React.js</strong> dan API dari OpenWeatherMap, WeatherApp adalah teman setia Anda dalam merencanakan aktivitas sehari-hari.
-        </p> */}
       </div>
       <div className="about-footer">
         <p>
