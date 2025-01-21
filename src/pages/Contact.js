@@ -11,11 +11,17 @@ const Contact = () => {
         </p>
         <div className="contact-info">
           <h3>Informasi Kontak</h3>
-          <ul>
-            <li><strong>Phone:</strong> 0895397889665</li>
-            <li><strong>Email:</strong> mikaelteubun@gmail.com</li>
-            <li><strong>Address:</strong> RE. Martadinata, Tanjung Priok, Jakarta Utara</li>
-          </ul>
+          <div className="contact-buttons">
+            <a href="https://wa.me/62895397889665" target="_blank" rel="noopener noreferrer">
+              <button>WhatsApp</button>
+            </a>
+            <a href="mailto:mikaelteubun@gmail.com">
+              <button>Email</button>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=RE.+Martadinata,+Tanjung+Priok,+Jakarta+Utara" target="_blank" rel="noopener noreferrer">
+              <button>Lokasi</button>
+            </a>
+          </div>
         </div>
       </div>
       <div className="contact-footer">
