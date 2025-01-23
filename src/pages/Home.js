@@ -100,7 +100,7 @@ const Home = () => {
         )}
 
         {/* Judul Prakiraan Cuaca */}
-        <div className="section-title center-text">
+        <div className="section-title  center-text">
           <div className="section-title-box with-border">
             <h2>
               <FontAwesomeIcon icon={faWind} className="fa-icon" /> 4-Day Forecast

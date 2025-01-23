@@ -4,7 +4,7 @@
   background-size: cover;
 }
 
-/* Cerah (Clear Sky) */
+/* Cuaca Cerah */
 .clear-bg {
   background: url("/src/assets/clear.jpeg") no-repeat center center fixed;
   background-size: cover;
@@ -29,11 +29,10 @@
   background-size: cover;
 }
 
-/* Gaya untuk Section Titles */
 .section-title {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Judul di tengah secara horizontal */
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -44,18 +43,6 @@
   display: inline-block;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-
-.section-title-box h2 {
-  color: black; /* Warna teks hitam */
-  display: flex; /* Mengatur posisi ikon dan teks */
-  align-items: center;
-  justify-content: center;
-  gap: 10px; /* Jarak antara ikon dan teks */
-}
-
-.section-title-box h2 .fa-icon {
-  color: black; /* Warna ikon hitam */
 }
 
 .title-underline {
@@ -78,7 +65,8 @@
 /* Forecast Section */
 .forecast-horizontal {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Mengatur posisi ke tengah */
+  gap: 20px;
   margin: 20px auto;
   overflow-x: auto;
   padding-bottom: 20px;
